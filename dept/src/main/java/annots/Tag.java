@@ -5,10 +5,15 @@
 
 package annots;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 /**
  *
  * @author rash4
  */
+@Retention(RetentionPolicy.SOURCE)
+//@Target(ElementType.FIELD) // this comment for ref.
 public @interface Tag {
     /**
      * <p>general default tagging.</p>
